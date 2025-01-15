@@ -1,0 +1,6 @@
+res://default_env.tres
+res://player/character_body_2d.tscn
+res://levels/rooms/tilesets/floating_dungeon_tileset.tres
+res://levels/rooms/tilesets/tileset_invisible_walls.tres
+res://player/sprite_2d.gd
+res://background.tscn
