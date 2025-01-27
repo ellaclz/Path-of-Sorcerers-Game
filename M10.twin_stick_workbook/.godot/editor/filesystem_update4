@@ -1,11 +1,10 @@
 res://default_env.tres
-res://player/character_body_2d.tscn
+res://player/player.tscn
 res://weapon.gd
 res://levels/rooms/tilesets/floating_dungeon_tileset.tres
 res://levels/rooms/tilesets/tileset_invisible_walls.tres
+res://mob.gd
 res://background.tscn
 res://bullet.tscn
 res://weapon.tscn
-res://node.tscn
-res://player/player.tscn
-res://bullet.gd
+res://mob.tscn
