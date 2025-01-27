@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://bp7oe4hr0nc08"]
 
-[ext_resource type="PackedScene" uid="uid://bkw5ln4pbpe1g" path="res://player/character_body_2d.tscn" id="1_stu0h"]
+[ext_resource type="PackedScene" uid="uid://bkw5ln4pbpe1g" path="res://player/player.tscn" id="1_stu0h"]
 [ext_resource type="PackedScene" uid="uid://cu2rb5dl4ljte" path="res://levels/rooms/room_a.tscn" id="2_e01v5"]
 
 [node name="Background" type="Node2D"]
