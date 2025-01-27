@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://ddepj4dpc4x5n"]
+
+[ext_resource type="PackedScene" uid="uid://cu2rb5dl4ljte" path="res://levels/rooms/room_a.tscn" id="1_4n0tm"]
+[ext_resource type="PackedScene" uid="uid://bkw5ln4pbpe1g" path="res://player/character_body_2d.tscn" id="2_1cg7f"]
+[ext_resource type="PackedScene" uid="uid://mi2gifukly3b" path="res://bullet.tscn" id="3_bnn50"]
+[ext_resource type="PackedScene" uid="uid://dr5e60wif1vj6" path="res://weapon.tscn" id="4_086gl"]
+
+[node name="Node" type="Node"]
+
+[node name="RoomA" parent="." instance=ExtResource("1_4n0tm")]
+
+[node name="Player" parent="." instance=ExtResource("2_1cg7f")]
+position = Vector2(752, 220)
+
+[node name="Bullet" parent="." instance=ExtResource("3_bnn50")]
+position = Vector2(791, 219)
+
+[node name="weapon" parent="." instance=ExtResource("4_086gl")]
