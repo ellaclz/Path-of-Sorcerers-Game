@@ -6,3 +6,7 @@ res://levels/rooms/tilesets/tileset_invisible_walls.tres
 res://mob.gd
 res://player/player.gd
 res://mob.tscn
+res://item.gd
+res://healing_item.gd
+res://pickup.gd
+res://pickup.tscn
