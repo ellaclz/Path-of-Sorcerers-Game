@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://bkw5ln4pbpe1g"]
+[gd_scene load_steps=10 format=3 uid="uid://bkw5ln4pbpe1g"]
 
 [ext_resource type="Script" path="res://player/player.gd" id="1_el4rr"]
 [ext_resource type="Texture2D" uid="uid://bw03btxpkxde4" path="res://player/godot_bottom.png" id="1_x4h6u"]
@@ -11,6 +11,18 @@
 [sub_resource type="CircleShape2D" id="CircleShape2D_plyjt"]
 radius = 18.0278
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_88j5e"]
+bg_color = Color(0.623529, 0.866667, 0.317647, 1)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(0.0295066, 0.0295066, 0.0295065, 1)
+corner_radius_top_left = 4
+corner_radius_top_right = 4
+corner_radius_bottom_right = 4
+corner_radius_bottom_left = 4
+
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
 script = ExtResource("1_el4rr")
@@ -21,6 +33,7 @@ texture = ExtResource("1_x4h6u")
 script = ExtResource("3_bomga")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+unique_name_in_owner = true
 position = Vector2(0, 1)
 shape = SubResource("CircleShape2D_plyjt")
 
@@ -53,3 +66,14 @@ rotation = 0.170971
 scale = Vector2(0.670828, 0.696094)
 texture = ExtResource("6_gvn5n")
 flip_v = true
+
+[node name="HealthBar" type="ProgressBar" parent="."]
+unique_name_in_owner = true
+offset_left = -51.0
+offset_top = -121.0
+offset_right = 51.0
+offset_bottom = -103.0
+theme_override_styles/fill = SubResource("StyleBoxFlat_88j5e")
+max_value = 10.0
+value = 10.0
+show_percentage = false
