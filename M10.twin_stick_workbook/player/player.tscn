@@ -67,7 +67,7 @@ scale = Vector2(0.670828, 0.696094)
 texture = ExtResource("6_gvn5n")
 flip_v = true
 
-[node name="HealthBar" type="ProgressBar" parent="."]
+[node name="Healthbar" type="ProgressBar" parent="."]
 unique_name_in_owner = true
 offset_left = -51.0
 offset_top = -121.0
