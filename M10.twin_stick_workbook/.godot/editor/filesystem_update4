@@ -9,3 +9,5 @@ res://weapon.tscn
 res://mob.tscn
 res://pickup.tscn
 res://mob.gd
+res://chest.gd
+res://chest.tscn

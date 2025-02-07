@@ -1,8 +1,8 @@
 AnimationPlayer
 Sprite2D
-AudioStreamPlayer2D
 CollisionShape2D
 Area2D
+AudioStreamPlayer2D
 ProgressBar
 CharacterBody2D
 Node
