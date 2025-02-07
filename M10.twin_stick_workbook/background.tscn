@@ -16,6 +16,9 @@ position = Vector2(780, 640)
 
 [node name="Mob" parent="." instance=ExtResource("3_wwr7w")]
 position = Vector2(253, 275)
+max_speed = 250.0
+acceleration = 700.0
+health = 3
 
 [node name="Pickup" parent="." instance=ExtResource("4_mdoa6")]
 
