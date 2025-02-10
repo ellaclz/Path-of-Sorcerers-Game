@@ -21,6 +21,7 @@ item = SubResource("Resource_55i7l")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 unique_name_in_owner = true
+position = Vector2(0, 3.48601)
 texture = ExtResource("2_eh2rp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]

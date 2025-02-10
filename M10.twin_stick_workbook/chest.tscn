@@ -1,33 +1,29 @@
-[gd_scene load_steps=8 format=3 uid="uid://dj333tqw8bh00"]
+[gd_scene load_steps=13 format=3 uid="uid://dj333tqw8bh00"]
 
 [ext_resource type="Script" path="res://chest.gd" id="1_5sbnv"]
+[ext_resource type="Script" path="res://item.gd" id="2_bv76j"]
 [ext_resource type="Texture2D" uid="uid://dub7cda3qxho2" path="res://pickups/chest/chest_bottom.png" id="2_t5nvp"]
+[ext_resource type="Script" path="res://healing_item.gd" id="3_qrfkx"]
 [ext_resource type="Texture2D" uid="uid://bfj2ayjhou4bv" path="res://pickups/chest/chest_top.png" id="3_ubq5j"]
+[ext_resource type="AudioStream" uid="uid://c2woejhi871h1" path="res://pickups/pickup.wav" id="4_k2nhe"]
+[ext_resource type="Texture2D" uid="uid://bafpwix362m4w" path="res://pickups/pickup_heart_pink.png" id="5_toe7j"]
+
+[sub_resource type="Resource" id="Resource_31b62"]
+script = ExtResource("3_qrfkx")
+healing_amount = 1
+display_name = ""
+texture = ExtResource("5_toe7j")
+sound_on_pickup = ExtResource("4_k2nhe")
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_4p8x8"]
 radius = 59.4138
-
-[sub_resource type="Animation" id="Animation_e2a1r"]
-resource_name = "open"
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("Top:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector2(0, -8.5), Vector2(48, -62), Vector2(79, 68)]
-}
 
 [sub_resource type="Animation" id="Animation_h45n3"]
 length = 0.001
 tracks/0/type = "value"
 tracks/0/imported = false
 tracks/0/enabled = true
-tracks/0/path = NodePath("Top:position")
+tracks/0/path = NodePath("CanvasGroup/Top:position")
 tracks/0/interp = 1
 tracks/0/loop_wrap = true
 tracks/0/keys = {
@@ -35,6 +31,21 @@ tracks/0/keys = {
 "transitions": PackedFloat32Array(1),
 "update": 0,
 "values": [Vector2(0, -8.5)]
+}
+
+[sub_resource type="Animation" id="Animation_e2a1r"]
+resource_name = "open"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("CanvasGroup/Top:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0, -8.5), Vector2(48, -62), Vector2(79, 68)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_7ddkv"]
@@ -45,20 +56,25 @@ _data = {
 
 [node name="Chest" type="Area2D"]
 script = ExtResource("1_5sbnv")
+possible_items = Array[ExtResource("2_bv76j")]([SubResource("Resource_31b62")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0.5, -0.5)
 shape = SubResource("CircleShape2D_4p8x8")
 
-[node name="Bottom" type="Sprite2D" parent="."]
+[node name="CanvasGroup" type="CanvasGroup" parent="."]
+unique_name_in_owner = true
 position = Vector2(0, -6)
+
+[node name="Bottom" type="Sprite2D" parent="CanvasGroup"]
 texture = ExtResource("2_t5nvp")
 
-[node name="Top" type="Sprite2D" parent="."]
+[node name="Top" type="Sprite2D" parent="CanvasGroup"]
 position = Vector2(0, -8.5)
 texture = ExtResource("3_ubq5j")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+unique_name_in_owner = true
 libraries = {
 "": SubResource("AnimationLibrary_7ddkv")
 }

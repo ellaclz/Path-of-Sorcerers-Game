@@ -1,11 +1,12 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1738969580
+::res://::1739229067
 background.tscn::PackedScene::3506172142264959571::1738969135::0::1::::<><>::uid://bkw5ln4pbpe1g::::res://player/player.tscn<>uid://cu2rb5dl4ljte::::res://levels/rooms/room_a.tscn<>uid://216m45tobb3r::::res://mob.tscn<>uid://c8l8hcp5eshlx::::res://pickup.tscn
 bullet.gd::GDScript::-1::1738018313::0::1::::Bullet<>Area2D<>::
 bullet.tscn::PackedScene::860431648090346833::1738969135::0::1::::<><>::res://bullet.gd<>uid://dxe2pniv6kdn4::::res://weapons/bullets/fire_trail.png<>uid://bgn8fvhkjniwn::::res://weapons/bullets/fire.png
-chesr.gd::GDScript::-1::1738969564::0::1::::<>Area2D<>::
+chest.gd::GDScript::-1::1738971176::0::1::::Chest<>Area2D<>::
+chest.tscn::PackedScene::7850515322666316511::1738971899::0::1::::<><>::res://chest.gd<>uid://dub7cda3qxho2::::res://pickups/chest/chest_bottom.png<>uid://bfj2ayjhou4bv::::res://pickups/chest/chest_top.png
 default_bus_layout.tres::AudioBusLayout::-1::1734281699::0::1::::<><>::
-default_env.tres::Environment::3478342378168232311::1738969135::0::1::::<><>::
+default_env.tres::Environment::3478342378168232311::1738971899::0::1::::<><>::
 healing_item.gd::GDScript::-1::1738366537::0::1::::HealingItem<>Item<>::
 icon.png::CompressedTexture2D::3641366948845910627::1734281699::1736551083::1::::<><>::
 item.gd::GDScript::-1::1738366087::0::1::::Item<>Resource<>::
