@@ -1,7 +1,7 @@
 [gd_scene load_steps=6 format=3 uid="uid://bp7oe4hr0nc08"]
 
 [ext_resource type="PackedScene" uid="uid://bkw5ln4pbpe1g" path="res://player/player.tscn" id="1_stu0h"]
-[ext_resource type="PackedScene" uid="uid://cu2rb5dl4ljte" path="res://levels/rooms/room_a.tscn" id="2_e01v5"]
+[ext_resource type="PackedScene" uid="uid://cu2rb5dl4ljte" path="res://room_a.tscn" id="2_e01v5"]
 [ext_resource type="PackedScene" uid="uid://216m45tobb3r" path="res://mob.tscn" id="3_wwr7w"]
 [ext_resource type="PackedScene" uid="uid://c8l8hcp5eshlx" path="res://pickup.tscn" id="4_mdoa6"]
 [ext_resource type="PackedScene" uid="uid://dj333tqw8bh00" path="res://chest.tscn" id="5_iwab5"]
@@ -28,3 +28,6 @@ position = Vector2(1152, 588)
 
 [node name="Chest" parent="." instance=ExtResource("5_iwab5")]
 position = Vector2(1269, 855)
+
+[node name="Chest2" parent="." instance=ExtResource("5_iwab5")]
+position = Vector2(489, 1070)

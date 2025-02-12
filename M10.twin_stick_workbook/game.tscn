@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://bq5jnqoegxp3o"]
+
+[ext_resource type="PackedScene" uid="uid://wdey00p3syru" path="res://levels/background/background_blue_sky.tscn" id="1_nf26l"]
+[ext_resource type="PackedScene" uid="uid://cu2rb5dl4ljte" path="res://room_a.tscn" id="2_1yn3j"]
+[ext_resource type="PackedScene" uid="uid://dgayuh42w4v6u" path="res://levels/rooms/room_b.tscn" id="3_h6fx5"]
+[ext_resource type="PackedScene" uid="uid://cq0mmphkbrvmm" path="res://levels/rooms/room_c.tscn" id="4_41ebg"]
+
+[node name="Game" type="Node2D"]
+y_sort_enabled = true
+
+[node name="BackgroundBlueSky" parent="." instance=ExtResource("1_nf26l")]
+
+[node name="RoomA" parent="." instance=ExtResource("2_1yn3j")]
+position = Vector2(128, 126)
+
+[node name="RoomB" parent="." instance=ExtResource("3_h6fx5")]
+position = Vector2(2975, 644)
+
+[node name="RoomC" parent="." instance=ExtResource("4_41ebg")]
+position = Vector2(2213, -1961)

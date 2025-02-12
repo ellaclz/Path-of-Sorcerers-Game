@@ -1,12 +1,13 @@
 res://default_env.tres
-res://chest.tscn
+res://player/player.tscn
 res://weapon.gd
 res://levels/rooms/tilesets/floating_dungeon_tileset.tres
 res://levels/rooms/tilesets/tileset_invisible_walls.tres
-res://chest.gd
 res://background.tscn
-res://player/player.tscn
 res://bullet.tscn
 res://weapon.tscn
 res://mob.tscn
 res://pickup.tscn
+res://chest.tscn
+res://game.tscn
+res://levels/rooms/room_d.tscn
