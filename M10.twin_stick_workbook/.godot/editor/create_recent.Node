@@ -1,3 +1,8 @@
+Button
+Label
+VBoxContainer
+PanelContainer
+Node2D
 CanvasGroup
 AnimationPlayer
 Sprite2D
@@ -7,6 +12,3 @@ AudioStreamPlayer2D
 ProgressBar
 CharacterBody2D
 Node
-Marker2D
-Node2D
-Camera2D

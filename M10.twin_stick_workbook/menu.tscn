@@ -1,0 +1,47 @@
+[gd_scene load_steps=2 format=3 uid="uid://ca21omp8vutid"]
+
+[ext_resource type="Script" path="res://menu.gd" id="1_rdbyg"]
+
+[node name="Menu" type="Node2D"]
+script = ExtResource("1_rdbyg")
+
+[node name="PanelContainer" type="PanelContainer" parent="."]
+offset_right = 576.0
+offset_bottom = 384.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+offset_right = 576.0
+offset_bottom = 384.0
+
+[node name="Label" type="Label" parent="."]
+offset_left = 128.0
+offset_top = 64.0
+offset_right = 448.0
+offset_bottom = 192.0
+theme_override_font_sizes/font_size = 39
+text = "You Won!
+Time: 12s"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Label2" type="Label" parent="."]
+offset_left = 128.0
+offset_top = 192.0
+offset_right = 384.0
+offset_bottom = 256.0
+
+[node name="Button" type="Button" parent="."]
+offset_left = 192.0
+offset_top = 192.0
+offset_right = 384.0
+offset_bottom = 256.0
+theme_override_font_sizes/font_size = 30
+text = "Play Again"
+
+[node name="Button2" type="Button" parent="."]
+offset_left = 192.0
+offset_top = 256.0
+offset_right = 384.0
+offset_bottom = 320.0
+theme_override_font_sizes/font_size = 30
+text = "Quit"

@@ -17,3 +17,5 @@ res://game.tscn
 res://room_a.tscn
 res://levels/rooms/room_b.tscn
 res://levels/rooms/room_c.tscn
+res://menu.gd
+res://menu.tscn
