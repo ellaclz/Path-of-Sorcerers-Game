@@ -13,3 +13,7 @@ res://background.tscn
 res://mob.gd
 res://pickup.tscn
 res://chest.gd
+res://game.tscn
+res://room_a.tscn
+res://levels/rooms/room_b.tscn
+res://levels/rooms/room_c.tscn

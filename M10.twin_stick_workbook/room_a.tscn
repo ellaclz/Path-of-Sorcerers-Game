@@ -1,9 +1,13 @@
-[gd_scene load_steps=5 format=4 uid="uid://cu2rb5dl4ljte"]
+[gd_scene load_steps=9 format=4 uid="uid://cu2rb5dl4ljte"]
 
 [ext_resource type="Script" path="res://levels/rooms/room.gd" id="1_8d3jl"]
 [ext_resource type="TileSet" uid="uid://bq65uwha45com" path="res://levels/rooms/tilesets/floating_dungeon_tileset.tres" id="1_hbbvy"]
 [ext_resource type="TileSet" uid="uid://cqb2wtrubw0n6" path="res://levels/rooms/tilesets/tileset_invisible_walls.tres" id="2_w4mpx"]
 [ext_resource type="PackedScene" uid="uid://ke0kmcp0efiv" path="res://levels/rooms/tilemap_layer_walls.tscn" id="3_sgyoc"]
+[ext_resource type="PackedScene" uid="uid://216m45tobb3r" path="res://mob.tscn" id="5_tbljl"]
+[ext_resource type="PackedScene" uid="uid://bkw5ln4pbpe1g" path="res://player/player.tscn" id="6_x3rm7"]
+[ext_resource type="PackedScene" uid="uid://dj333tqw8bh00" path="res://chest.tscn" id="7_1o0qu"]
+[ext_resource type="PackedScene" uid="uid://c8l8hcp5eshlx" path="res://pickup.tscn" id="8_ekvhd"]
 
 [node name="RoomA" type="Node2D"]
 y_sort_enabled = true
@@ -32,3 +36,21 @@ unique_name_in_owner = true
 use_parent_material = true
 tile_map_data = PackedByteArray("AAD//wQAAAAAAAAAAAD//wUAAAAAAAAAAAD//wYAAAAAAAAAAAD//wcAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAcAAAABAAAAAAAAAAgAAAAAAAAAAAAAAAkAAAAAAAAAAAABAAAAAAAAAAAAAAABAAMAAAABAAAAAAABAAQAAAAAAAAAAAABAAgAAAABAAAAAAABAAkAAAAAAAAAAAABAAoAAAAAAAAAAAACAAAAAAAAAAAAAAACAAkAAAABAAAAAAACAAoAAAAAAAAAAAADAAAAAAAAAAAAAAADAAkAAAABAAAAAAADAAoAAAAAAAAAAAAEAP//AAAAAAAAAAAEAAAAAAAAAAAAAAAEAAkAAAABAAAAAAAEAAoAAAAAAAAAAAAFAP//AAAAAAAAAAAGAP//AAAAAAAAAAAHAP//AAAAAAAAAAAIAP//AAAAAAAAAAAIAAkAAAABAAAAAAAIAAoAAAAAAAAAAAAJAP//AAAAAAAAAAAJAAAAAAAAAAAAAAAJAAkAAAABAAAAAAAJAAoAAAAAAAAAAAAKAAAAAAAAAAAAAAAKAAkAAAABAAAAAAAKAAoAAAAAAAAAAAALAAAAAAAAAAAAAAALAAEAAAAAAAAAAAALAAIAAAAAAAAAAAALAAMAAAAAAAAAAAALAAUAAAAAAAAAAAALAAYAAAAAAAAAAAALAAcAAAAAAAAAAAALAAgAAAAAAAAAAAALAAkAAAAAAAAAAAALAAoAAAAAAAAAAAAFAAkAAAABAAAAAAAFAAoAAAAAAAAAAAAHAAoAAAAAAAAAAAAHAAkAAAABAAAAAAA=")
 tile_set = ExtResource("2_w4mpx")
+
+[node name="Mob" parent="." instance=ExtResource("5_tbljl")]
+position = Vector2(319.046, 832.366)
+
+[node name="Player" parent="." instance=ExtResource("6_x3rm7")]
+position = Vector2(1151.49, 449.32)
+
+[node name="Chest" parent="." instance=ExtResource("7_1o0qu")]
+position = Vector2(767.926, 64.8801)
+
+[node name="Pickup" parent="." instance=ExtResource("8_ekvhd")]
+position = Vector2(766.753, 1088.88)
+
+[node name="Pickup2" parent="." instance=ExtResource("8_ekvhd")]
+position = Vector2(255.706, 256.293)
+
+[node name="Chest2" parent="." instance=ExtResource("7_1o0qu")]
+position = Vector2(382.68, 1152.44)
