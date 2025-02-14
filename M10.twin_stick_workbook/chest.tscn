@@ -15,8 +15,8 @@ display_name = ""
 texture = ExtResource("5_toe7j")
 sound_on_pickup = ExtResource("4_k2nhe")
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_4p8x8"]
-radius = 59.4138
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4aavq"]
+size = Vector2(309.375, 205.438)
 
 [sub_resource type="Animation" id="Animation_h45n3"]
 length = 0.001
@@ -59,8 +59,8 @@ script = ExtResource("1_5sbnv")
 possible_items = Array[ExtResource("2_bv76j")]([SubResource("Resource_31b62")])
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0.5, -0.5)
-shape = SubResource("CircleShape2D_4p8x8")
+position = Vector2(0.3125, -0.71875)
+shape = SubResource("RectangleShape2D_4aavq")
 
 [node name="CanvasGroup" type="CanvasGroup" parent="."]
 unique_name_in_owner = true
