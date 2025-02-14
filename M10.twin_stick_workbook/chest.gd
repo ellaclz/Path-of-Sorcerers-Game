@@ -40,7 +40,7 @@ func create_pickup() -> void:
 	
 	var random_angle := randf_range(0.0, 2.0 * PI)
 	var random_direction := Vector2(1.0, 0.0).rotated(random_angle)
-	var land_position := random_direction * randf_range(60.0, 120.0)
+	var land_position := random_direction * randf_range(1269.0, 855.0)
 	
 	const FLIGHT_TIME := 0.3
 	const HALF_FLIGHT_TIME := FLIGHT_TIME / 2.0

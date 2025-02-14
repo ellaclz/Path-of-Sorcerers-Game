@@ -1,17 +1,30 @@
-class_name Bullet extends Area2D
+extends Area2D
 
-@export var speed := 100.0
-@export var max_range := 200.0
-@export var _traveled_distance = -500.0
+var travelled_distance = 0
 
-func _physics_process(delta: float) -> void:
-	var distance := speed * delta
-	var motion := Vector2.RIGHT.rotated(rotation) * distance
-	position += motion
+var damage = 10
 
-	_traveled_distance += distance
-	if _traveled_distance > max_range:
-		_destroy()
+func _physics_process(delta):
+	const SPEED = 1000
+	const RANGE = 1200
+	var direction = Vector2.RIGHT.rotated(rotation)
+	position += direction * SPEED * delta
+	
+	travelled_distance += SPEED * delta
+	if travelled_distance > RANGE:
+		queue_free()
 
-func _destroy():
+func _ready() -> void:
+	body_entered.connect(func (body: Node) -> void:
+		if body is Mob:
+			body.health -= damage
+	)
+	
+	
+
+
+func _on_body_entered(body: Node2D) -> void:
 	queue_free()
+	if body.has_method("take_damge"):
+		body.take_damage()
+		
